@@ -1,0 +1,1 @@
+"./zn-msp430-slave.o" -Wl,--start-group -lMSP-EXP430G2553LP_core -lm -Wl,--end-group 
