@@ -138,14 +138,11 @@ BIN_OUTPUTS__QUOTED += \
 all: $(OBJS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "zn-msp430-slave.out" secondary-outputs
 
-dependents:
-	-cd C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Release && $(MAKE) all
-
 # Tool invocations
-zn-msp430-slave.out: $(OBJS) $(GEN_CMDS) C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Release/libMSP-EXP430G2553LP_core.a
+zn-msp430-slave.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU Linker'
-	"C:/Users/Zack/Downloads/energia-1.6.10E18-windows/energia-1.6.10E18/hardware/tools/msp430/bin/msp430-gcc.exe" -fno-exceptions -DF_CPU=16000000L -DENERGIA_MSP-EXP430G2553LP -DENERGIA_ARCH_MSP430 -DENERGIA=18 -DARDUINO=10610 -O2 -ffunction-sections -fdata-sections -g -w -Wall -fno-threadsafe-statics -mmcu=msp430g2553 -Wl,-Map,"zn-msp430-slave.map" -Wl,--gc-sections -L"C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Release" -Wl,--undefined,main -w -g -O2 -fno-rtti -fno-exceptions -o"zn-msp430-slave.out" $(ORDERED_OBJS)
+	"C:/Users/Zack/Downloads/energia-1.6.10E18-windows/energia-1.6.10E18/hardware/tools/msp430/bin/msp430-gcc.exe" -fno-exceptions -DF_CPU=16000000L -DENERGIA_MSP-EXP430G2553LP -DENERGIA_ARCH_MSP430 -DENERGIA=18 -DARDUINO=10610 -O2 -ffunction-sections -fdata-sections -g -w -Wall -fno-threadsafe-statics -mmcu=msp430g2553 -Wl,-Map,"zn-msp430-slave.map" -Wl,--gc-sections -L"/Release" -Wl,--undefined,main -w -g -O2 -fno-rtti -fno-exceptions -o"zn-msp430-slave.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -167,7 +164,6 @@ secondary-outputs: $(BIN_OUTPUTS)
 
 .PHONY: all clean dependents
 .SECONDARY:
-C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Release/libMSP-EXP430G2553LP_core.a:
 
 -include ../makefile.targets
 

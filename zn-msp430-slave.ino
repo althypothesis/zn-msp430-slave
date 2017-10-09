@@ -6,6 +6,7 @@
 #define STATE_PROCESS_DATA 4
 #define STATE_PING_RESPONSE 5
 #define STATE_STATUS_RESPONSE 6
+#define STATE_INPUT_RESPONSE 7
 
 const byte myId = 0x02;                             // Address on the bus
 const byte serialNum[4] = { 0x11, 0x22, 0x33, 0x44 }; // Device serial number
@@ -70,7 +71,7 @@ void flashLED(int times) {
 void setup() {
 	Serial.begin(baud);
 
-	// LED tomfoolery
+	// GPIO setup
 	pinMode(P1_0, OUTPUT);
 	pinMode(P1_3, INPUT_PULLUP);
 	flashLED(1);
@@ -156,6 +157,9 @@ void loop() {
 			else if (!ignorePacket && data[0] == 0 && data[1] == 1) { // status packet
 				state = STATE_STATUS_RESPONSE;
 				lastMillis = millis();
+			} else if (!ignorePacket && data[0] == 0 && data[1] == 2) { // input state packet
+				state = STATE_INPUT_RESPONSE;
+				lastMillis = millis();
 			} else {
 				resetState();
 			}
@@ -178,6 +182,20 @@ void loop() {
 
 			for (unsigned int i = 0; i < sizeof(txStatusResponse); i++) {
 				Serial.write(txStatusResponse[i]);
+			}
+
+			resetState();
+			break;
+		}
+		case STATE_INPUT_RESPONSE: {
+			byte inputState;
+			inputState |= digitalRead(P1_3)<<0;
+			byte txInputResponse[5] = { senderAdr, myId, 0x02, inputState, 0 };
+
+			txInputResponse[4] = checksum(txInputResponse, sizeof(txInputResponse));
+
+			for (unsigned int i = 0; i < sizeof(txInputResponse); i++) {
+				Serial.write(txInputResponse[i]);
 			}
 
 			resetState();

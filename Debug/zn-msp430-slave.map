@@ -169,14 +169,10 @@ Discarded input sections
  .text          0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
  .data          0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
  .bss           0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .text.digitalRead
-                0x00000000       0x42 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
  .rodata.digital_pin_to_analog_in
                 0x00000000       0x54 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
  .rodata.digital_pin_to_timer
                 0x00000000       0x15 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .rodata.port_to_input
-                0x00000000        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
  .text          0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
  .data          0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
  .bss           0x00000000        0x0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
@@ -861,7 +857,7 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000c000      0xd9a
+.text           0x0000c000      0xe42
                 0x0000c000                . = ALIGN (0x2)
  *(.init .init.*)
  *(.init0)
@@ -939,127 +935,133 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
                 0x0000c0c6                flashLED(int)
  .text.setup    0x0000c102       0x64 ./zn-msp430-slave.o
                 0x0000c102                setup
- .text.loop     0x0000c166      0x2b0 ./zn-msp430-slave.o
+ .text.loop     0x0000c166      0x316 ./zn-msp430-slave.o
                 0x0000c166                loop
  .text.enableXtal
-                0x0000c416       0x62 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c416                enableXtal
+                0x0000c47c       0x62 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c47c                enableXtal
  .text.initClocks
-                0x0000c478       0x1c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c478                initClocks
- .text.init     0x0000c494       0x18 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c494                init
- .text.millis   0x0000c4ac       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c4ac                millis
- .text.delay    0x0000c4be       0x7e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c4be                delay
+                0x0000c4de       0x1c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c4de                initClocks
+ .text.init     0x0000c4fa       0x18 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c4fa                init
+ .text.millis   0x0000c512       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c512                millis
+ .text.delay    0x0000c524       0x7e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c524                delay
  .text.watchdog_isr
-                0x0000c53c       0x82 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
-                0x0000c53c                __isr_10
-                0x0000c53c                watchdog_isr
- .text.pinMode  0x0000c5be       0x7a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000c5be                pinMode
+                0x0000c5a2       0x82 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+                0x0000c5a2                __isr_10
+                0x0000c5a2                watchdog_isr
+ .text.pinMode  0x0000c624       0x7a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000c624                pinMode
  .text.pinMode_int
-                0x0000c638       0xa0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000c638                pinMode_int
+                0x0000c69e       0xa0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000c69e                pinMode_int
+ .text.digitalRead
+                0x0000c73e       0x42 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000c73e                digitalRead
  .text.digitalWrite
-                0x0000c6d8       0x4a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000c6d8                digitalWrite
+                0x0000c780       0x4a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000c780                digitalWrite
  .text._ZN14HardwareSerial9availableEv
-                0x0000c722       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c722                HardwareSerial::available()
+                0x0000c7ca       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c7ca                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x0000c734       0x1e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c734                HardwareSerial::peek()
+                0x0000c7dc       0x1e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c7dc                HardwareSerial::peek()
  .text._ZN14HardwareSerial4readEv
-                0x0000c752       0x2c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c752                HardwareSerial::read()
+                0x0000c7fa       0x2c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c7fa                HardwareSerial::read()
  .text._ZN14HardwareSerial5flushEv
-                0x0000c77e       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c77e                HardwareSerial::flush()
+                0x0000c826       0x12 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c826                HardwareSerial::flush()
  .text._ZN14HardwareSerial5writeEh
-                0x0000c790       0x3c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c790                HardwareSerial::write(unsigned char)
+                0x0000c838       0x3c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c838                HardwareSerial::write(unsigned char)
  .text._Z11serialEventv
-                0x0000c7cc        0x2 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c7cc                serialEvent()
+                0x0000c874        0x2 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c874                serialEvent()
  .text._Z14serialEventRunv
-                0x0000c7ce       0x1a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c7ce                serialEventRun()
+                0x0000c876       0x1a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c876                serialEventRun()
  .text._ZN14HardwareSerial5beginEm
-                0x0000c7e8      0x136 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c7e8                HardwareSerial::begin(unsigned long)
+                0x0000c890      0x136 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c890                HardwareSerial::begin(unsigned long)
  .text.uart_rx_isr
-                0x0000c91e       0x28 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c91e                uart_rx_isr
+                0x0000c9c6       0x28 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c9c6                uart_rx_isr
  .text.uart_tx_isr
-                0x0000c946       0x3c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000c946                uart_tx_isr
+                0x0000c9ee       0x3c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000c9ee                uart_tx_isr
  .text.startup._GLOBAL__sub_I_rx_buffer
-                0x0000c982       0x44 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000ca2a       0x44 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
  .text._ZN5Print5writeEPKhj
-                0x0000c9c6       0x2e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
-                0x0000c9c6                Print::write(unsigned char const*, unsigned int)
+                0x0000ca6e       0x2e C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+                0x0000ca6e                Print::write(unsigned char const*, unsigned int)
  .text.usci_isr_install
-                0x0000c9f4        0x2 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
-                0x0000c9f4                usci_isr_install
+                0x0000ca9c        0x2 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+                0x0000ca9c                usci_isr_install
  .text.USCIAB0TX_ISR
-                0x0000c9f6       0x66 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
-                0x0000c9f6                USCIAB0TX_ISR
-                0x0000c9f6                __isr_6
+                0x0000ca9e       0x66 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+                0x0000ca9e                USCIAB0TX_ISR
+                0x0000ca9e                __isr_6
  .text.USCIAB0RX_ISR
-                0x0000ca5c       0x58 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
-                0x0000ca5c                USCIAB0RX_ISR
-                0x0000ca5c                __isr_7
+                0x0000cb04       0x58 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+                0x0000cb04                USCIAB0RX_ISR
+                0x0000cb04                __isr_7
  .text.i2c_txrx_isr
-                0x0000cab4      0x156 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
-                0x0000cab4                i2c_txrx_isr
+                0x0000cb5c      0x156 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+                0x0000cb5c                i2c_txrx_isr
  .text.i2c_state_isr
-                0x0000cc0a       0xe4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
-                0x0000cc0a                i2c_state_isr
- .text.libgcc   0x0000ccee       0x40 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
-                0x0000ccee                __ext_udivmod32
-                0x0000ccee                __udivsi3
-                0x0000cd24                __umodsi3
- .text          0x0000cd2e       0x6a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
-                0x0000cd2e                memset
- .text.crt0     0x0000cd98        0x2 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
-                0x0000cd98                _unexpected_
-                0x0000cd9a                . = ALIGN (0x2)
+                0x0000ccb2       0xe4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+                0x0000ccb2                i2c_state_isr
+ .text.libgcc   0x0000cd96       0x40 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
+                0x0000cd96                __ext_udivmod32
+                0x0000cd96                __udivsi3
+                0x0000cdcc                __umodsi3
+ .text          0x0000cdd6       0x6a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
+                0x0000cdd6                memset
+ .text.crt0     0x0000ce40        0x2 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
+                0x0000ce40                _unexpected_
+                0x0000ce42                . = ALIGN (0x2)
 
-.rodata         0x0000cd9a       0x78
-                0x0000cd9a                . = ALIGN (0x2)
+.rodata         0x0000ce42       0x82
+                0x0000ce42                . = ALIGN (0x2)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.setup  0x0000cd9a        0x8 ./zn-msp430-slave.o
- .rodata.loop   0x0000cda2        0xe ./zn-msp430-slave.o
+ .rodata.setup  0x0000ce42        0x8 ./zn-msp430-slave.o
+ .rodata.loop   0x0000ce4a       0x10 ./zn-msp430-slave.o
  .rodata.digital_pin_to_bit_mask
-                0x0000cdb0       0x15 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdb0                digital_pin_to_bit_mask
+                0x0000ce5a       0x15 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce5a                digital_pin_to_bit_mask
  .rodata.digital_pin_to_port
-                0x0000cdc5       0x15 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdc5                digital_pin_to_port
+                0x0000ce6f       0x15 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce6f                digital_pin_to_port
  .rodata.port_to_sel2
-                0x0000cdda        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdda                port_to_sel2
+                0x0000ce84        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce84                port_to_sel2
  .rodata.port_to_sel0
-                0x0000cde2        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cde2                port_to_sel0
+                0x0000ce8c        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce8c                port_to_sel0
  .rodata.port_to_ren
-                0x0000cdea        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdea                port_to_ren
+                0x0000ce94        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce94                port_to_ren
  .rodata.port_to_dir
-                0x0000cdf2        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdf2                port_to_dir
+                0x0000ce9c        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ce9c                port_to_dir
  .rodata.port_to_output
-                0x0000cdfa        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
-                0x0000cdfa                port_to_output
+                0x0000cea4        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000cea4                port_to_output
+ .rodata.port_to_input
+                0x0000ceac        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+                0x0000ceac                port_to_input
  .rodata._ZTV14HardwareSerial
-                0x0000ce02       0x10 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
-                0x0000ce02                vtable for HardwareSerial
-                0x0000ce12                . = ALIGN (0x2)
-                0x0000ce12                _etext = .
+                0x0000ceb4       0x10 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+                0x0000ceb4                vtable for HardwareSerial
+                0x0000cec4                . = ALIGN (0x2)
+                0x0000cec4                _etext = .
 
-.data           0x00000200        0x2 load address 0x0000ce12
+.data           0x00000200        0x2 load address 0x0000cec4
                 0x00000200                . = ALIGN (0x2)
                 0x00000200                PROVIDE (__data_start, .)
  *(.data .data.* .gnu.linkonce.d.*)
@@ -1068,10 +1070,10 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
                 0x00000200                I2C_baseAddress
                 0x00000202                . = ALIGN (0x2)
                 0x00000202                _edata = .
-                0x0000ce12                PROVIDE (__data_load_start, LOADADDR (.data))
+                0x0000cec4                PROVIDE (__data_load_start, LOADADDR (.data))
                 0x00000002                PROVIDE (__data_size, SIZEOF (.data))
 
-.bss            0x00000202       0xc6 load address 0x0000ce14
+.bss            0x00000202       0xc6 load address 0x0000cec6
                 0x00000202                PROVIDE (__bss_start, .)
  *(.bss .bss.*)
  .bss.readSuccess
@@ -1166,7 +1168,7 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
                 0x000002c8                PROVIDE (__bss_end, .)
                 0x000000c6                PROVIDE (__bss_size, SIZEOF (.bss))
 
-.noinit         0x000002c8        0x2 load address 0x0000ce14
+.noinit         0x000002c8        0x2 load address 0x0000cec6
                 0x000002c8                PROVIDE (__noinit_start, .)
  *(.noinit .noinit.*)
  .noinit.crt0   0x000002c8        0x2 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__watchdog_support.o)
@@ -1374,71 +1376,71 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xdfd4
+.debug_info     0x00000000     0xe04e
  *(.debug_info)
- .debug_info    0x00000000      0x723 ./zn-msp430-slave.o
- .debug_info    0x00000723      0x768 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
- .debug_info    0x00000e8b      0x8b4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .debug_info    0x0000173f     0x1b0f C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
- .debug_info    0x0000324e      0x277 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
- .debug_info    0x000034c5     0x22c1 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
- .debug_info    0x00005786     0x2a89 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
- .debug_info    0x0000820f       0xd8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
- .debug_info    0x000082e7      0x14d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
- .debug_info    0x00008434      0x221 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
- .debug_info    0x00008655      0x31a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
- .debug_info    0x0000896f      0x140 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
- .debug_info    0x00008aaf      0x68b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
- .debug_info    0x0000913a      0x420 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
- .debug_info    0x0000955a      0x5ea c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
- .debug_info    0x00009b44      0x1e4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
- .debug_info    0x00009d28      0x208 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
- .debug_info    0x00009f30       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulqi3.o)
- .debug_info    0x00009fbd       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod16.o)
- .debug_info    0x0000a04a       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
- .debug_info    0x0000a0d7       0xb5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
- .debug_info    0x0000a18c      0x425 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
- .debug_info    0x0000a5b1      0x3c9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
- .debug_info    0x0000a97a      0x35c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
- .debug_info    0x0000acd6      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
- .debug_info    0x0000af44      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
- .debug_info    0x0000b1b2      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
- .debug_info    0x0000b420      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
- .debug_info    0x0000b68e      0x20b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
- .debug_info    0x0000b899      0x289 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
- .debug_info    0x0000bb22      0x144 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_thenan_sf.o)
- .debug_info    0x0000bc66      0x204 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
- .debug_info    0x0000be6a      0x109 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
- .debug_info    0x0000bf73      0x2b1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
- .debug_info    0x0000c224      0x23e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
- .debug_info    0x0000c462      0x1d5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
- .debug_info    0x0000c637       0xa0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clz.o)
- .debug_info    0x0000c6d7       0xa7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
- .debug_info    0x0000c77e       0xa4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
- .debug_info    0x0000c822       0xbb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
- .debug_info    0x0000c8dd       0xb6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
- .debug_info    0x0000c993       0xe1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
- .debug_info    0x0000ca74      0x113 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
- .debug_info    0x0000cb87      0x113 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
- .debug_info    0x0000cc9a       0xb7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
- .debug_info    0x0000cd51       0xfe c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
- .debug_info    0x0000ce4f       0xe0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
- .debug_info    0x0000cf2f       0x95 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
- .debug_info    0x0000cfc4      0x151 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
- .debug_info    0x0000d115      0x1d7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
- .debug_info    0x0000d2ec      0x277 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
- .debug_info    0x0000d563      0x565 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
- .debug_info    0x0000dac8       0x39 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
- .debug_info    0x0000db01       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulsi3.o)
- .debug_info    0x0000db8e       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_divmod32.o)
- .debug_info    0x0000dc1b       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod64.o)
- .debug_info    0x0000dca8       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__watchdog_support.o)
- .debug_info    0x0000dd1c       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__init_stack.o)
- .debug_info    0x0000dd90       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_copy_data.o)
- .debug_info    0x0000de04       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_clear_bss.o)
- .debug_info    0x0000de78       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_endless_loop__.o)
- .debug_info    0x0000deec       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
- .debug_info    0x0000df60       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_ctors430.o)
+ .debug_info    0x00000000      0x79d ./zn-msp430-slave.o
+ .debug_info    0x0000079d      0x768 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+ .debug_info    0x00000f05      0x8b4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+ .debug_info    0x000017b9     0x1b0f C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+ .debug_info    0x000032c8      0x277 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
+ .debug_info    0x0000353f     0x22c1 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+ .debug_info    0x00005800     0x2a89 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
+ .debug_info    0x00008289       0xd8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
+ .debug_info    0x00008361      0x14d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
+ .debug_info    0x000084ae      0x221 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
+ .debug_info    0x000086cf      0x31a C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+ .debug_info    0x000089e9      0x140 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
+ .debug_info    0x00008b29      0x68b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+ .debug_info    0x000091b4      0x420 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
+ .debug_info    0x000095d4      0x5ea c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
+ .debug_info    0x00009bbe      0x1e4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
+ .debug_info    0x00009da2      0x208 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
+ .debug_info    0x00009faa       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulqi3.o)
+ .debug_info    0x0000a037       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod16.o)
+ .debug_info    0x0000a0c4       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
+ .debug_info    0x0000a151       0xb5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
+ .debug_info    0x0000a206      0x425 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
+ .debug_info    0x0000a62b      0x3c9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
+ .debug_info    0x0000a9f4      0x35c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
+ .debug_info    0x0000ad50      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
+ .debug_info    0x0000afbe      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
+ .debug_info    0x0000b22c      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
+ .debug_info    0x0000b49a      0x26e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
+ .debug_info    0x0000b708      0x20b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
+ .debug_info    0x0000b913      0x289 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
+ .debug_info    0x0000bb9c      0x144 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_thenan_sf.o)
+ .debug_info    0x0000bce0      0x204 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
+ .debug_info    0x0000bee4      0x109 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
+ .debug_info    0x0000bfed      0x2b1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
+ .debug_info    0x0000c29e      0x23e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
+ .debug_info    0x0000c4dc      0x1d5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
+ .debug_info    0x0000c6b1       0xa0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clz.o)
+ .debug_info    0x0000c751       0xa7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
+ .debug_info    0x0000c7f8       0xa4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
+ .debug_info    0x0000c89c       0xbb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
+ .debug_info    0x0000c957       0xb6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
+ .debug_info    0x0000ca0d       0xe1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
+ .debug_info    0x0000caee      0x113 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
+ .debug_info    0x0000cc01      0x113 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
+ .debug_info    0x0000cd14       0xb7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
+ .debug_info    0x0000cdcb       0xfe c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
+ .debug_info    0x0000cec9       0xe0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
+ .debug_info    0x0000cfa9       0x95 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
+ .debug_info    0x0000d03e      0x151 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
+ .debug_info    0x0000d18f      0x1d7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
+ .debug_info    0x0000d366      0x277 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
+ .debug_info    0x0000d5dd      0x565 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
+ .debug_info    0x0000db42       0x39 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
+ .debug_info    0x0000db7b       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulsi3.o)
+ .debug_info    0x0000dc08       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_divmod32.o)
+ .debug_info    0x0000dc95       0x8d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod64.o)
+ .debug_info    0x0000dd22       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__watchdog_support.o)
+ .debug_info    0x0000dd96       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__init_stack.o)
+ .debug_info    0x0000de0a       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_copy_data.o)
+ .debug_info    0x0000de7e       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_clear_bss.o)
+ .debug_info    0x0000def2       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_endless_loop__.o)
+ .debug_info    0x0000df66       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
+ .debug_info    0x0000dfda       0x74 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_ctors430.o)
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev   0x00000000     0x3e76
@@ -1507,71 +1509,71 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
  .debug_abbrev  0x00003e4e       0x14 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
  .debug_abbrev  0x00003e62       0x14 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_ctors430.o)
 
-.debug_line     0x00000000     0x48fe
+.debug_line     0x00000000     0x4917
  *(.debug_line)
- .debug_line    0x00000000      0x3c9 ./zn-msp430-slave.o
- .debug_line    0x000003c9      0x3a0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
- .debug_line    0x00000769      0x280 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .debug_line    0x000009e9      0x3c4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
- .debug_line    0x00000dad      0x1cd C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
- .debug_line    0x00000f7a      0x4cd C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
- .debug_line    0x00001447      0x850 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
- .debug_line    0x00001c97      0x10c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
- .debug_line    0x00001da3      0x15f C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
- .debug_line    0x00001f02      0x126 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
- .debug_line    0x00002028      0x229 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
- .debug_line    0x00002251      0x176 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
- .debug_line    0x000023c7      0x375 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
- .debug_line    0x0000273c      0x292 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
- .debug_line    0x000029ce      0x1c6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
- .debug_line    0x00002b94       0x97 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
- .debug_line    0x00002c2b       0xb7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
- .debug_line    0x00002ce2       0x73 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulqi3.o)
- .debug_line    0x00002d55       0x77 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod16.o)
- .debug_line    0x00002dcc       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
- .debug_line    0x00002e52       0x6f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
- .debug_line    0x00002ec1      0x117 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
- .debug_line    0x00002fd8      0x10f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
- .debug_line    0x000030e7       0xd1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
- .debug_line    0x000031b8       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
- .debug_line    0x00003241       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
- .debug_line    0x000032ca       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
- .debug_line    0x00003353       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
- .debug_line    0x000033dc       0xa1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
- .debug_line    0x0000347d       0x97 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
- .debug_line    0x00003514       0x6c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_thenan_sf.o)
- .debug_line    0x00003580       0x9e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
- .debug_line    0x0000361e       0x99 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
- .debug_line    0x000036b7       0xda c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
- .debug_line    0x00003791       0xb5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
- .debug_line    0x00003846       0xc0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
- .debug_line    0x00003906       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clz.o)
- .debug_line    0x00003961       0x44 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
- .debug_line    0x000039a5       0x49 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
- .debug_line    0x000039ee       0x82 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
- .debug_line    0x00003a70       0x4d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
- .debug_line    0x00003abd       0x85 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
- .debug_line    0x00003b42       0xf6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
- .debug_line    0x00003c38       0xf6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
- .debug_line    0x00003d2e       0x47 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
- .debug_line    0x00003d75       0xd5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
- .debug_line    0x00003e4a       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
- .debug_line    0x00003ed0       0x3d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
- .debug_line    0x00003f0d       0xce c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
- .debug_line    0x00003fdb      0x10b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
- .debug_line    0x000040e6       0xa9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
- .debug_line    0x0000418f      0x2df c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
- .debug_line    0x0000446e       0x31 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
- .debug_line    0x0000449f       0x7e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulsi3.o)
- .debug_line    0x0000451d       0x8b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_divmod32.o)
- .debug_line    0x000045a8       0xcc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod64.o)
- .debug_line    0x00004674       0x5c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__watchdog_support.o)
- .debug_line    0x000046d0       0x5a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__init_stack.o)
- .debug_line    0x0000472a       0x60 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_copy_data.o)
- .debug_line    0x0000478a       0x60 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_clear_bss.o)
- .debug_line    0x000047ea       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_endless_loop__.o)
- .debug_line    0x00004845       0x5a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
- .debug_line    0x0000489f       0x5f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_ctors430.o)
+ .debug_line    0x00000000      0x3e2 ./zn-msp430-slave.o
+ .debug_line    0x000003e2      0x3a0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+ .debug_line    0x00000782      0x280 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+ .debug_line    0x00000a02      0x3c4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+ .debug_line    0x00000dc6      0x1cd C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
+ .debug_line    0x00000f93      0x4cd C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+ .debug_line    0x00001460      0x850 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
+ .debug_line    0x00001cb0      0x10c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
+ .debug_line    0x00001dbc      0x15f C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
+ .debug_line    0x00001f1b      0x126 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
+ .debug_line    0x00002041      0x229 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+ .debug_line    0x0000226a      0x176 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
+ .debug_line    0x000023e0      0x375 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+ .debug_line    0x00002755      0x292 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
+ .debug_line    0x000029e7      0x1c6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
+ .debug_line    0x00002bad       0x97 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
+ .debug_line    0x00002c44       0xb7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
+ .debug_line    0x00002cfb       0x73 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulqi3.o)
+ .debug_line    0x00002d6e       0x77 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod16.o)
+ .debug_line    0x00002de5       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod32.o)
+ .debug_line    0x00002e6b       0x6f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
+ .debug_line    0x00002eda      0x117 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
+ .debug_line    0x00002ff1      0x10f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
+ .debug_line    0x00003100       0xd1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
+ .debug_line    0x000031d1       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
+ .debug_line    0x0000325a       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
+ .debug_line    0x000032e3       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
+ .debug_line    0x0000336c       0x89 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
+ .debug_line    0x000033f5       0xa1 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
+ .debug_line    0x00003496       0x97 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
+ .debug_line    0x0000352d       0x6c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_thenan_sf.o)
+ .debug_line    0x00003599       0x9e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
+ .debug_line    0x00003637       0x99 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
+ .debug_line    0x000036d0       0xda c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
+ .debug_line    0x000037aa       0xb5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
+ .debug_line    0x0000385f       0xc0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
+ .debug_line    0x0000391f       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clz.o)
+ .debug_line    0x0000397a       0x44 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
+ .debug_line    0x000039be       0x49 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
+ .debug_line    0x00003a07       0x82 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
+ .debug_line    0x00003a89       0x4d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
+ .debug_line    0x00003ad6       0x85 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
+ .debug_line    0x00003b5b       0xf6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
+ .debug_line    0x00003c51       0xf6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
+ .debug_line    0x00003d47       0x47 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
+ .debug_line    0x00003d8e       0xd5 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
+ .debug_line    0x00003e63       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
+ .debug_line    0x00003ee9       0x3d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
+ .debug_line    0x00003f26       0xce c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
+ .debug_line    0x00003ff4      0x10b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
+ .debug_line    0x000040ff       0xa9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
+ .debug_line    0x000041a8      0x2df c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
+ .debug_line    0x00004487       0x31 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
+ .debug_line    0x000044b8       0x7e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mulsi3.o)
+ .debug_line    0x00004536       0x8b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_divmod32.o)
+ .debug_line    0x000045c1       0xcc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_udivmod64.o)
+ .debug_line    0x0000468d       0x5c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__watchdog_support.o)
+ .debug_line    0x000046e9       0x5a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(__init_stack.o)
+ .debug_line    0x00004743       0x60 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_copy_data.o)
+ .debug_line    0x000047a3       0x60 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_clear_bss.o)
+ .debug_line    0x00004803       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_endless_loop__.o)
+ .debug_line    0x0000485e       0x5a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_unexpected_.o)
+ .debug_line    0x000048b8       0x5f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libcrt0.a(_ctors430.o)
 
 .debug_frame    0x00000000     0x1ada
  *(.debug_frame)
@@ -1623,155 +1625,155 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
  .debug_frame   0x000019c2       0x68 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
  .debug_frame   0x00001a2a       0xb0 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
 
-.debug_str      0x00000000     0x2e4e
+.debug_str      0x00000000     0x2e69
  *(.debug_str)
- .debug_str     0x00000000      0x347 ./zn-msp430-slave.o
-                                0x3a4 (size before relaxing)
- .debug_str     0x00000347      0x228 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+ .debug_str     0x00000000      0x362 ./zn-msp430-slave.o
+                                0x3bf (size before relaxing)
+ .debug_str     0x00000362      0x228 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
                                 0x3f5 (size before relaxing)
- .debug_str     0x0000056f      0x49b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+ .debug_str     0x0000058a      0x49b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
                                 0x6b6 (size before relaxing)
- .debug_str     0x00000a0a      0xe3d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+ .debug_str     0x00000a25      0xe3d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
                                0x10d2 (size before relaxing)
- .debug_str     0x00001847       0x77 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
+ .debug_str     0x00001862       0x77 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
                                 0x250 (size before relaxing)
- .debug_str     0x000018be      0x3f4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+ .debug_str     0x000018d9      0x3f4 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
                                 0xebf (size before relaxing)
- .debug_str     0x00001cb2      0x272 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
+ .debug_str     0x00001ccd      0x272 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
                                 0xc57 (size before relaxing)
- .debug_str     0x00001f24       0x8c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
+ .debug_str     0x00001f3f       0x8c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
                                  0xef (size before relaxing)
- .debug_str     0x00001fb0       0x98 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
+ .debug_str     0x00001fcb       0x98 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
                                 0x1c4 (size before relaxing)
- .debug_str     0x00002048       0x86 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
+ .debug_str     0x00002063       0x86 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
                                 0x15b (size before relaxing)
- .debug_str     0x000020ce       0xdf C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+ .debug_str     0x000020e9       0xdf C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
                                 0x2a3 (size before relaxing)
- .debug_str     0x000021ad       0xd3 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
+ .debug_str     0x000021c8       0xd3 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
                                 0x1bc (size before relaxing)
- .debug_str     0x00002280      0x284 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+ .debug_str     0x0000229b      0x284 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
                                 0x4c3 (size before relaxing)
- .debug_str     0x00002504      0x10c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
+ .debug_str     0x0000251f      0x10c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
                                 0x2bb (size before relaxing)
- .debug_str     0x00002610       0xcc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
+ .debug_str     0x0000262b       0xcc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
                                 0x197 (size before relaxing)
- .debug_str     0x000026dc       0x2f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
+ .debug_str     0x000026f7       0x2f c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
                                 0x15a (size before relaxing)
- .debug_str     0x0000270b       0x26 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
+ .debug_str     0x00002726       0x26 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
                                 0x152 (size before relaxing)
- .debug_str     0x00002731       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
+ .debug_str     0x0000274c       0x86 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
                                 0x13e (size before relaxing)
- .debug_str     0x000027b7      0x138 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
+ .debug_str     0x000027d2      0x138 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
                                 0x238 (size before relaxing)
- .debug_str     0x000028ef       0x27 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
+ .debug_str     0x0000290a       0x27 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
                                 0x1f1 (size before relaxing)
- .debug_str     0x00002916       0x35 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
+ .debug_str     0x00002931       0x35 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
                                 0x1fa (size before relaxing)
- .debug_str     0x0000294b        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
+ .debug_str     0x00002966        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
                                 0x1bf (size before relaxing)
- .debug_str     0x00002953        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
+ .debug_str     0x0000296e        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
                                 0x1bf (size before relaxing)
- .debug_str     0x0000295b        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
+ .debug_str     0x00002976        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
                                 0x1bf (size before relaxing)
- .debug_str     0x00002963        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
+ .debug_str     0x0000297e        0x8 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
                                 0x1bf (size before relaxing)
- .debug_str     0x0000296b       0x27 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
+ .debug_str     0x00002986       0x27 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
                                 0x1ae (size before relaxing)
- .debug_str     0x00002992        0xa c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
+ .debug_str     0x000029ad        0xa c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
                                 0x1c8 (size before relaxing)
  .debug_str     0x00000000      0x16a c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_thenan_sf.o)
- .debug_str     0x0000299c        0xe c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
+ .debug_str     0x000029b7        0xe c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
                                 0x1aa (size before relaxing)
- .debug_str     0x000029aa       0x17 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
+ .debug_str     0x000029c5       0x17 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
                                 0x14a (size before relaxing)
- .debug_str     0x000029c1       0x10 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
+ .debug_str     0x000029dc       0x10 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
                                 0x1c7 (size before relaxing)
- .debug_str     0x000029d1        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
+ .debug_str     0x000029ec        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
                                 0x1a9 (size before relaxing)
- .debug_str     0x000029dc       0x10 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
+ .debug_str     0x000029f7       0x10 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
                                 0x18d (size before relaxing)
  .debug_str     0x00000000      0x12d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clz.o)
- .debug_str     0x000029ec       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
+ .debug_str     0x00002a07       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
                                  0xfd (size before relaxing)
- .debug_str     0x00002a05       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
+ .debug_str     0x00002a20       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
                                  0xfd (size before relaxing)
- .debug_str     0x00002a1e       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
+ .debug_str     0x00002a39       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
                                 0x106 (size before relaxing)
- .debug_str     0x00002a39       0x23 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
+ .debug_str     0x00002a54       0x23 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
                                 0x107 (size before relaxing)
- .debug_str     0x00002a5c       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
+ .debug_str     0x00002a77       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
                                 0x106 (size before relaxing)
- .debug_str     0x00002a77       0x28 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
+ .debug_str     0x00002a92       0x28 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
                                 0x11f (size before relaxing)
- .debug_str     0x00002a9f       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
+ .debug_str     0x00002aba       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
                                 0x121 (size before relaxing)
- .debug_str     0x00002aba       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
+ .debug_str     0x00002ad5       0x1b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
                                 0x104 (size before relaxing)
- .debug_str     0x00002ad5       0x26 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
+ .debug_str     0x00002af0       0x26 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
                                 0x11d (size before relaxing)
- .debug_str     0x00002afb       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
+ .debug_str     0x00002b16       0x19 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
                                 0x109 (size before relaxing)
- .debug_str     0x00002b14       0x15 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
+ .debug_str     0x00002b2f       0x15 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
                                  0xf9 (size before relaxing)
- .debug_str     0x00002b29       0x55 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
+ .debug_str     0x00002b44       0x55 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
                                 0x145 (size before relaxing)
- .debug_str     0x00002b7e       0x47 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
+ .debug_str     0x00002b99       0x47 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
                                 0x138 (size before relaxing)
- .debug_str     0x00002bc5       0x85 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
+ .debug_str     0x00002be0       0x85 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
                                 0x198 (size before relaxing)
- .debug_str     0x00002c4a      0x1f3 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
+ .debug_str     0x00002c65      0x1f3 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
                                 0x37e (size before relaxing)
- .debug_str     0x00002e3d       0x11 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
+ .debug_str     0x00002e58       0x11 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(errno.o)
                                  0x7c (size before relaxing)
 
-.debug_loc      0x00000000     0x4d88
+.debug_loc      0x00000000     0x4da6
  *(.debug_loc)
- .debug_loc     0x00000000       0xeb ./zn-msp430-slave.o
- .debug_loc     0x000000eb      0x1aa C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
- .debug_loc     0x00000295      0x246 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .debug_loc     0x000004db      0x168 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
- .debug_loc     0x00000643      0x82c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
- .debug_loc     0x00000e6f     0x1113 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
- .debug_loc     0x00001f82      0x17c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
- .debug_loc     0x000020fe       0x73 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
- .debug_loc     0x00002171      0x25b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
- .debug_loc     0x000023cc       0x2b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
- .debug_loc     0x000023f7       0x21 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
- .debug_loc     0x00002418      0x125 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
- .debug_loc     0x0000253d      0x16d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
- .debug_loc     0x000026aa      0x6d7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
- .debug_loc     0x00002d81      0x16d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
- .debug_loc     0x00002eee      0x1b4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
- .debug_loc     0x000030a2       0x44 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
- .debug_loc     0x000030e6      0x2ca c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
- .debug_loc     0x000033b0      0x23c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
- .debug_loc     0x000035ec      0x110 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
- .debug_loc     0x000036fc       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
- .debug_loc     0x00003738       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
- .debug_loc     0x00003774       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
- .debug_loc     0x000037b0       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
- .debug_loc     0x000037ec       0xa2 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
- .debug_loc     0x0000388e       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
- .debug_loc     0x000038ca       0x6c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
- .debug_loc     0x00003936       0x80 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
- .debug_loc     0x000039b6      0x181 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
- .debug_loc     0x00003b37       0x83 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
- .debug_loc     0x00003bba       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
- .debug_loc     0x00003c15        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
- .debug_loc     0x00003c20       0x24 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
- .debug_loc     0x00003c44       0x38 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
- .debug_loc     0x00003c7c       0x12 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
- .debug_loc     0x00003c8e       0x45 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
- .debug_loc     0x00003cd3      0x1e9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
- .debug_loc     0x00003ebc      0x1e9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
- .debug_loc     0x000040a5       0x39 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
- .debug_loc     0x000040de       0xdb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
- .debug_loc     0x000041b9       0xa9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
- .debug_loc     0x00004262        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
- .debug_loc     0x0000426d      0x12e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
- .debug_loc     0x0000439b      0x1f6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
- .debug_loc     0x00004591       0xeb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
- .debug_loc     0x0000467c      0x70c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
+ .debug_loc     0x00000000      0x109 ./zn-msp430-slave.o
+ .debug_loc     0x00000109      0x1aa C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+ .debug_loc     0x000002b3      0x246 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+ .debug_loc     0x000004f9      0x168 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+ .debug_loc     0x00000661      0x82c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+ .debug_loc     0x00000e8d     0x1113 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
+ .debug_loc     0x00001fa0      0x17c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
+ .debug_loc     0x0000211c       0x73 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
+ .debug_loc     0x0000218f      0x25b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
+ .debug_loc     0x000023ea       0x2b C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+ .debug_loc     0x00002415       0x21 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
+ .debug_loc     0x00002436      0x125 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+ .debug_loc     0x0000255b      0x16d C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
+ .debug_loc     0x000026c8      0x6d7 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_pow.o)
+ .debug_loc     0x00002d9f      0x16d c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(sf_scalbn.o)
+ .debug_loc     0x00002f0c      0x1b4 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libm.a(ef_sqrt.o)
+ .debug_loc     0x000030c0       0x44 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fixunssfsi.o)
+ .debug_loc     0x00003104      0x2ca c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
+ .debug_loc     0x000033ce      0x23c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
+ .debug_loc     0x0000360a      0x110 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
+ .debug_loc     0x0000371a       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_gt_sf.o)
+ .debug_loc     0x00003756       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_ge_sf.o)
+ .debug_loc     0x00003792       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_lt_sf.o)
+ .debug_loc     0x000037ce       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_le_sf.o)
+ .debug_loc     0x0000380a       0xa2 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_si_to_sf.o)
+ .debug_loc     0x000038ac       0x3c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_sf_to_si.o)
+ .debug_loc     0x000038e8       0x6c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_usi_to_sf.o)
+ .debug_loc     0x00003954       0x80 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
+ .debug_loc     0x000039d4      0x181 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_pack_sf.o)
+ .debug_loc     0x00003b55       0x83 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_unpack_sf.o)
+ .debug_loc     0x00003bd8       0x5b c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_fpcmp_parts_sf.o)
+ .debug_loc     0x00003c33        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strchr.o)
+ .debug_loc     0x00003c3e       0x24 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcmp.o)
+ .debug_loc     0x00003c62       0x38 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncmp.o)
+ .debug_loc     0x00003c9a       0x12 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strcpy.o)
+ .debug_loc     0x00003cac       0x45 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strncpy.o)
+ .debug_loc     0x00003cf1      0x1e9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memcpy.o)
+ .debug_loc     0x00003eda      0x1e9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memmove.o)
+ .debug_loc     0x000040c3       0x39 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strrchr.o)
+ .debug_loc     0x000040fc       0xdb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(memset.o)
+ .debug_loc     0x000041d7       0xa9 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strstr.o)
+ .debug_loc     0x00004280        0xb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(atol.o)
+ .debug_loc     0x0000428b      0x12e c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
+ .debug_loc     0x000043b9      0x1f6 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(strtol.o)
+ .debug_loc     0x000045af       0xeb c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(sprintf.o)
+ .debug_loc     0x0000469a      0x70c c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1779,29 +1781,29 @@ LOAD c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardwar
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x580
+.debug_ranges   0x00000000      0x578
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x98 ./zn-msp430-slave.o
- .debug_ranges  0x00000098       0x54 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
- .debug_ranges  0x000000ec       0x14 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
- .debug_ranges  0x00000100       0x44 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
- .debug_ranges  0x00000144        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
- .debug_ranges  0x0000014c       0xa0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
- .debug_ranges  0x000001ec      0x248 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
- .debug_ranges  0x00000434       0x20 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
- .debug_ranges  0x00000454        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
- .debug_ranges  0x0000045c       0x14 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
- .debug_ranges  0x00000470       0x10 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
- .debug_ranges  0x00000480       0x1c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
- .debug_ranges  0x0000049c       0x30 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
- .debug_ranges  0x000004cc       0x24 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
- .debug_ranges  0x000004f0       0x14 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
- .debug_ranges  0x00000504       0x28 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
- .debug_ranges  0x0000052c       0x24 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
- .debug_ranges  0x00000550        0xc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
- .debug_ranges  0x0000055c        0xc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
- .debug_ranges  0x00000568       0x18 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
+ .debug_ranges  0x00000000       0x90 ./zn-msp430-slave.o
+ .debug_ranges  0x00000090       0x54 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring.o)
+ .debug_ranges  0x000000e4       0x14 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(wiring_digital.o)
+ .debug_ranges  0x000000f8       0x44 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(HardwareSerial.o)
+ .debug_ranges  0x0000013c        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(main.o)
+ .debug_ranges  0x00000144       0xa0 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(Print.o)
+ .debug_ranges  0x000001e4      0x248 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(WString.o)
+ .debug_ranges  0x0000042c       0x20 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(atof.o)
+ .debug_ranges  0x0000044c        0x8 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(dtostrf.o)
+ .debug_ranges  0x00000454       0x14 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(itoa.o)
+ .debug_ranges  0x00000468       0x10 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(usci_isr_handler.o)
+ .debug_ranges  0x00000478       0x1c C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(new.o)
+ .debug_ranges  0x00000494       0x30 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi.o)
+ .debug_ranges  0x000004c4       0x24 C:/Users/Zack/ccs_workspace_v7/MSP-EXP430G2553LP_core/Debug\libMSP-EXP430G2553LP_core.a(twi_sw.o)
+ .debug_ranges  0x000004e8       0x14 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_addsub_sf.o)
+ .debug_ranges  0x000004fc       0x28 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_mul_sf.o)
+ .debug_ranges  0x00000524       0x24 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_div_sf.o)
+ .debug_ranges  0x00000548        0xc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3\libgcc.a(_clzsi2.o)
+ .debug_ranges  0x00000554        0xc c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(malloc.o)
+ .debug_ranges  0x00000560       0x18 c:/users/zack/downloads/energia-1.6.10e18-windows/energia-1.6.10e18/hardware/tools/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib\libc.a(vuprintf.o)
                 0x00000400                PROVIDE (__stack, (ORIGIN (ram) + 0x200))
-                0x0000ce12                PROVIDE (__data_start_rom, _etext)
-                0x0000ce14                PROVIDE (__data_end_rom, (_etext + SIZEOF (.data)))
+                0x0000cec4                PROVIDE (__data_start_rom, _etext)
+                0x0000cec6                PROVIDE (__data_end_rom, (_etext + SIZEOF (.data)))
 OUTPUT(zn-msp430-slave.out elf32-msp430)
